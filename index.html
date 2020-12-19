@@ -15,55 +15,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!---->
 
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="./style.css">
 
-
-
-
-    <title>Tony(Lih-Ren) Chang's Website</title>
+    <title>Lih-Ren</title>
 </head>
 
 <body>
 
     <header>
 
-        <!-- Navbar (sit on top) -->
-        <!--
-        <div class="w3-top">
-            <div class="w3-bar" id="myNavbar">
-                <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
-                    href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <a href="#" class="w3-bar-item"></i> Lih-Ren</a>
-                <a href="#contact" class="w3-bar-item w3-button w3-right"><i class="fa fa-envelope"></i> CONTACT</a>
-                <a href="#gallery" class="w3-bar-item w3-button w3-right"><i class="fa fa-envelope"></i> GALLERY</a>
-                <a href="#about" class="w3-bar-item w3-button w3-right"><i class="fa fa-user"></i> ABOUT</a>
-            </div>
-        -->
-
-            <!-- Navbar on small screens -->
-            <!--
-            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-                <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-                <a href="#gallery" class="w3-bar-item w3-button" onclick="toggleFunction()">GALLERY</a>
-                <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-            </div>
+        <div class="topnav" id="myTopnav">
+            <label class="brand">Tony (Lih-Ren)</label>
+            <a style="float: right" href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+            <a style="float: right" href="#about"><i class="fa fa-user"></i> About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-    -->
 
-        
-        <nav>
-            <h3 id="logo">Lih-Ren</h3>
-            <a href="#about" class="w3-bar-item w3-button" id="myButton"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#gallery" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> GALLERY</a>
-            <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-        </nav>
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="bugerButton w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about"> About</a>
+            <a href="#contact"> Contact</a>
+        </div>
 
         <section>
             <div class="hero">
-                <img src="./image/home.jpg" alt="">
-                <h1 class="headline">BLOG</h1>
+                <img class="test" src="./image/home.jpg" alt="">
+                <h1 class="headline">Creep before you walk</h1>
             </div>
         </section>
     </header>
@@ -86,17 +68,6 @@
 
         </div>
 
-        <div id="gallery">
-            <h2>Gallery</h2>
-            <hr style="width:200px" class="w3-opacity">
-            <p>
-                lkmlkasmdklasmdlaksdlams
-                aslkdnlasnlkasd
-                askldlasdlka
-                alskdlasnd
-            </p>
-        </div>
-
         <!-- Contact Section -->
         <div id="contact">
             <h2>Contact Me</h2>
@@ -105,9 +76,9 @@
                 <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Melbourne, VIC,
                 AU<br>
                 <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +61
-                0450056539<br>
+                0406892817<br>
                 <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                tongingw@student.unimelb.edu.au<br>
+                lihrenc@student.unimelb.edu.au<br>
             </div><br>
             <!-- End Contact Section -->
         </div>
@@ -135,7 +106,7 @@
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"></script>
         <!-- Custom JavaScript-->
-        <script src="./js/custom.js"></script>
+        <script src="./js/media.js"></script>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
