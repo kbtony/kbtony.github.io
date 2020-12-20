@@ -21,17 +21,18 @@ nav {
     min-height: 10vh;
     color: white;
     align-items: center;
-}
-*/
+}*/
 
 #logo {
     grid-column: 2/4;
     font-size: 32px;
 }
 
+
 .hamburger {
     justify-self: end;
 }
+
 
 section {
     display: flex;
@@ -91,59 +92,6 @@ section {
     color: white;
 }
 
-
-/*https://www.youtube.com/watch?v=tEC4kqzNTnM*/
-.logo2 {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-
-}
-nav {
-    height: 80px;
-    width: 100%;
-    background: #000;
-}
-label.logo2 {
-    font-size: 35px;
-    font-weight: bold;
-    color: white;
-    padding: 0 100px;
-    line-height: 80px;
-}
-nav ul {
-    margin-right: 40px;
-    margin-bottom: 0;
-    list-style-type: none;
-  margin: 0;
-  padding: 0;
-
-}
-nav li {
-    float: right;
-    display: inline-block;
-    margin: 0 8px;
-    line-height: 80px;
-    list-style-type: none;
-  margin: 0;
-  padding: 0;
-
-}
-nav a {
-    color: white;
-    font-size: 18px;
-    border: 1px solid transparent;
-    padding: 7px 10px;
-    border-radius: 3ps;
-}
-a:hover {
-    border: 1px solid white;
-    transition: .5s;
-    text-decoration: none;
-    list-style: none;
-    color: white;
-}
 
 /*https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
 /* Add a black background color to the top navigation */
