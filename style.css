@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+h2 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+
 .slider {
     position: absolute;
     top: 0;
@@ -58,9 +63,11 @@ section {
     top: 85%;
     left: 18%;
     font-size: 75px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     transform: translate(-20%, -70%);
     color: white;
     z-index: 3;
+    font-family: 'Lobster', cursive;
 }
 
 .hero::after {
@@ -173,4 +180,13 @@ section {
 
 #footer a:hover{
   color:#41d684;
+}
+
+.tony {
+    width: 15%;
+    height: 15%;
+    object-fit: cover;
+    float:left;
+    margin-right: 10%;
+    position: relative;
 }

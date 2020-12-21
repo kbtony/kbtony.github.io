@@ -1,7 +1,10 @@
+
 const hero = document.querySelector(".hero");
 const slider = document.querySelector(".slider");
 const topnav = document.querySelector(".topnav");
 const headline = document.querySelector(".headline");
+
+
 
 
 const tl = new TimelineMax();
