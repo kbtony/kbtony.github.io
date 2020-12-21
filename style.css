@@ -168,3 +168,9 @@ section {
     border: 0px;
     color: turquoise;
 }
+
+
+
+#footer a:hover{
+  color:#41d684;
+}
