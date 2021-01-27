@@ -177,16 +177,27 @@ section {
 }
 
 
-
 #footer a:hover{
   color:#41d684;
 }
 
-.tony {
-    width: 15%;
-    height: 15%;
-    object-fit: cover;
-    float:left;
-    margin-right: 10%;
-    position: relative;
+/*add profile photo (about section)*/
+
+/*
+.about_body {
+    display: grid;
+    grid-template-columns: 25% 75%;
 }
+
+.tony {
+    height: 40%;
+    justify-content: center;
+}
+
+#box1, #box2 {
+    height: 350px;
+}
+*/
+
+
+
