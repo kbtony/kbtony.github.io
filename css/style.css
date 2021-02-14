@@ -184,6 +184,7 @@ section {
     text-decoration: none;
     color: black;
     font-weight: 900;
+    border-radius: 1rem;
     /* font-family: var(--ff-secondary); */
 }
 
