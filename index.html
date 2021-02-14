@@ -6,34 +6,34 @@
     <!--For resonsive website -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lih-Ren's Portfolio</title>
+    
     <!--
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--Faster Google Fonts with Preconnect-->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
+    <!--Link to style.css-->
     <link rel="stylesheet" href="./css/style.css">
-
-    
-
-    <title>Lih-Ren</title>
 </head>
 
 <body>
-
     <header>
-
+        <!-- Navbar on large screens -->
         <div class="topnav" id="myTopnav">
             <label id="home" class="brand">Tony (Lih-Ren)</label>
-            <a style="float: right" href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+            <a style="float: right" href="#contacts"><i class="fa fa-envelope"></i> Contact</a>
+            <a style="float: right" href="#projects"><i class="fa fa-tasks"></i> Projects</a>
             <a style="float: right" href="#about"><i class="fa fa-user"></i> About</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -42,8 +42,9 @@
 
         <!-- Navbar on small screens -->
         <div id="navDemo" class="bugerButton w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="#about"> About</a>
-            <a href="#contact"> Contact</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contact</a>
         </div>
 
         <section>
@@ -56,64 +57,122 @@
 
     <div class="slider"></div>
 
-    <div id="main">
-        <!-- About Section -->
-        <div id="about">
-            <h2>About Me</h2>
-            <hr style="width:200px" class="w3-opacity">
-            <p>
-                The desire for growth and helping others is what keeps me learning all the time. I am a curious person with a strong enthusiasm to apply innovations conducted by my engineering knowledge and skills to solve various problems in reality.
-            </p>
-            <p>
-                This passion carries me through my education at the University of Melbourne. I have been doing projects on different topics and actively participating in competitions to expand my horizons in the computer science field and sharpen my software development abilities. Besides, I experienced leading a small team to enhance the efficiency of civil servants through software solutions. I am also willing to contribute to our society, like volunteering in educational camps held at a school with few academic resources.
-            </p>
-        </div>
-
-        <a href="./CV/Resume_lihrenc.pdf">
-                <button class="w3-button w3-center w3-light-grey w3-padding-large w3-section">
-                    <i class="fa fa-download"></i> Download Resume
-                </button>
-        </a>
-        <!--
-        <div id="about">
-            <h2>About Me</h2>
-            <hr style="width:200px" class="w3-opacity">
-            <div class="about_body">
-                <div class="box1">
-                    <img class="tony" src="./image/tony.png" alt="">
-                </div>
-                <div class="box2">
-                    <p>
-                        The desire for growth and helping others is what keeps me learning all the time. I am a curious person with a strong enthusiasm to apply innovations conducted by my engineering knowledge and skills to solve various problems in reality.
-                    </p>
-                    <p>
-                        This passion carries me through my education at the University of Melbourne. I have been doing projects on different topics and actively participating in competitions to expand my horizons in the computer science field and sharpen my software development abilities. Besides, I experienced leading a small team to enhance the efficiency of civil servants through software solutions. I am also willing to contribute to our society, like volunteering in educational camps held at a school with few academic resources.
-                    </p>
-                    <a href="./CV/Resume_lihrenc.pdf">
-                        <button class="w3-button w3-center w3-light-grey w3-padding-large w3-section">
-                            <i class="fa fa-download"></i> Download Resume
-                        </button>
-                    </a>
-                </div>       
+    <!--Testing about-->
+    <div class="about-me" id="about">
+        <h2>About Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <div class="about-body">
+            <div class="me-img">
+                <img id="tony" src="./image/tony.jpg" alt="">
             </div>
-        </div>
-        -->
-
-        <!-- Contact Section -->
-        <div id="contact">
-            <h2>Contact Me</h2>
-            <hr style="width:200px">
-            <div class="w3-section">
-                <i class="fa fa-map-marker fa-fw w3-hover-text-green w3-xlarge w3-margin-right"></i> Melbourne, VIC, AU<br>
-                <i class="fa fa-phone fa-fw w3-hover-text-green w3-xlarge w3-margin-right"></i> Phone: +61 0406892817<br>
-                <i class="fa fa-envelope fa-fw w3-hover-text-green w3-xlarge w3-margin-right"></i> Email: lihrenc@student.unimelb.edu.au<br>
-            </div><br>
-            <!-- End Contact Section -->
+            <article class="me-text">
+                <p>
+                    The desire for growth and helping others is what keeps me learning all the time. 
+                    I am a curious person with a strong enthusiasm to apply innovations conducted by 
+                    my engineering knowledge and skills to solve various problems in reality.
+                </p>
+                <p>
+                    This passion carries me through my education at the University of Melbourne. 
+                    I have been doing projects on different topics and actively participating in 
+                    competitions to expand my horizons in the computer science field and sharpen my 
+                    software development abilities. Besides, I experienced leading a small team to 
+                    enhance the efficiency of civil servants through software solutions. 
+                    I am also willing to contribute to our society, like volunteering in educational 
+                    camps held at a school with few academic resources.
+                </p>
+                <a id="resume-button" href="./CV/Resume_lihrenc.pdf">
+                    <button class="w3-button w3-center w3-light-grey w3-padding-large w3-section">
+                        <i class="fa fa-download"></i> Download Resume
+                    </button>
+                </a>
+            </article>
         </div>
     </div>
 
+    <!--Testing My Projects-->
+    <div class="my-projects-slider">
+        <div class="my-projects" id="projects">
+            <h2 class="my-projects-title">My Projects</h2>
+            <hr style="width:200px;color: white;" class="w3-opacity">
+        </div>
+        <div class="projects-body">
+            <!--project 1-->
+            <a href="https://github.com/kbtony/Job-Tracker-MERN" class="projects-item" target="_blank">
+                <img
+                  src="./image/t1.png"
+                  alt="Job Application Tracker"
+                  class="projects-img"
+                />
+                <p>Job Application Tracker<br>(MERN Stack and AWS)</p>
+            </a>
+
+            <!--project 2-->
+            <a href="https://github.com/kbtony/Job-Tracker-MERN" class="projects-item" target="_blank">
+                <img
+                  src="./image/t2.png"
+                  alt="Benchmarking Stream Processing Frameworks"
+                  class="projects-img"
+                />
+                <p>Benchmarking Stream Processing Frameworks</p>
+            </a>
+
+            <!--project 3-->
+            <a href="https://github.com/kbtony/Job-Tracker-MERN" class="projects-item" target="_blank">
+                <img
+                  src="./image/t3.png"
+                  alt="T-Rex Game Mobile App"
+                  class="projects-img"
+                />
+                <p>T-Rex Game Mobile App</p>
+            </a>
+
+            <!--project 4-->
+            <a href="https://github.com/kbtony/Job-Tracker-MERN" class="projects-item" target="_blank">
+                <img
+                  src="./image/t4.png"
+                  alt="Pac-Man Game AI"
+                  class="projects-img"
+                />
+                <p>Pac-Man Game AI</p>
+            </a>
+
+            <!--project 5-->
+            <a href="https://github.com/kbtony/Job-Tracker-MERN" class="projects-item" target="_blank">
+                <img
+                  src="./image/t5.png"
+                  alt="JAutomatic Fact Verification System"
+                  class="projects-img"
+                />
+                <p>Automatic Fact Verification System</p>
+            </a>
+
+            <!--project 6-->
+            <a href="https://github.com/kbtony/Job-Tracker-MERN" class="projects-item" target="_blank">
+                <img
+                  src="./image/t6.png"
+                  alt="P2P File Sharing System"
+                  class="projects-img"
+                />
+                <p>P2P File Sharing System</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact" id="contacts">
+        <h2>Contact Me</h2>
+        <hr style="width:200px">
+        <div class="w3-section">
+            <i class="fa fa-map-marker fa-fw w3-hover-text-green w3-xlarge w3-margin-right"></i> Melbourne, VIC, AU<br>
+            <i class="fa fa-phone fa-fw w3-hover-text-green w3-xlarge w3-margin-right"></i> Phone: +61 0406892817<br>
+            <i class="fa fa-envelope fa-fw w3-hover-text-green w3-xlarge w3-margin-right"></i> Email: tony790511@gmail.com<br>
+        </div><br>
+    </div>
+    <!-- End Contact Section -->
+
+
+    <!-- Footer -->
     <div id="footer">
-        <!-- Footer -->
         <footer class="w3-center w3-dark-grey w3-padding-64">
             <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 
@@ -141,12 +200,12 @@
         <script src="./js/media.js"></script>
     </div>
 
+    <!--GSAP Animations-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
         integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
         crossorigin="anonymous"></script>
     <!--1219 better to download it and upload to git-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 
     <script src="./js/app.js"></script>
 </body>
