@@ -361,6 +361,11 @@ section {
     font-size: 17px;
 }
 
+#brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .topnav label {
     font-size: 20px;
     font-weight: bold;
