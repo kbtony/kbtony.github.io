@@ -209,6 +209,11 @@ section {
       text-align: center;
 }
 
+
+.projects-body > a:hover {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
     .my-projects {
         margin-top: 5%;
