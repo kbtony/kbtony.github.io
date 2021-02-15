@@ -186,6 +186,10 @@ section {
     font-weight: 900;
     border-radius: 1rem;
     /* font-family: var(--ff-secondary); */
+
+
+    /*for image fade animation*/
+    position: relative;
 }
 
 .projects-img {
@@ -214,8 +218,51 @@ section {
 }
 
 
-/*Contact*/
+/*projects item fade animation*/
+.projects-fade::after {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 5% 5% 5%;
 
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.projects-fade:hover::after {
+    opacity: 0.85;
+}
+
+.project-1::after {
+    content: "Built a single-page web application with a RESTful API server to manage the progress of job application by using MongoDB, Express, React, and Node.js (deployed on AWS)";
+}
+
+.project-2::after {
+    content: "Compared the behavior between two distributed big data processing frameworks, Apache Heron and Dragon, by using Java and InfluxDB  (deployed on Nectar Research Cloud)";
+}
+
+.project-3::after {
+    content: "Developed a motion-controlled gaming App with a user-friendly interface and handled application data via Firebase Real-time Database";
+}
+
+.project-4::after {
+    content: "Implemented an information retrieval system with a self-trained deep learning model by utilizing AllenNLP and PyLucene";
+}
+
+.project-5::after {
+    content: "Built a distributed system based on TCP/UDP protocol to achieve efficient file sharing and synchronization among users by using Java";
+}
+/*projects item fade animation*/
+
+
+/*Contact*/
 .contact {
     margin: auto;
     padding-top: 5%;
@@ -351,7 +398,7 @@ section {
 
   
 /* Style the links inside the navigation bar */
-.topnav a, .topnav label {
+.topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -362,11 +409,6 @@ section {
 }
 
 #brand {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.topnav label {
     font-size: 20px;
     font-weight: bold;
 }
