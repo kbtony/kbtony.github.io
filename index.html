@@ -28,27 +28,34 @@
 </head>
 
 <body>
+    <!-- Navbar on large screens -->
+    <div class="topnav" id="myTopnav">
+        <label id="home" class="brand">Tony (Lih-Ren)</label>
+        <a style="float: right" href="#contacts"><i class="fa fa-envelope"></i> Contact</a>
+        <a style="float: right" href="#projects"><i class="fa fa-tasks"></i> Projects</a>
+        <a style="float: right" href="#about"><i class="fa fa-user"></i> About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
     <header>
-        <!-- Navbar on large screens -->
-        <div class="topnav" id="myTopnav">
-            <label id="home" class="brand">Tony (Lih-Ren)</label>
-            <a style="float: right" href="#contacts"><i class="fa fa-envelope"></i> Contact</a>
-            <a style="float: right" href="#projects"><i class="fa fa-tasks"></i> Projects</a>
-            <a style="float: right" href="#about"><i class="fa fa-user"></i> About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+        <!--Test Animated Responsive Hamburger Navbar-->
+        <ul class="hamburger-links">
+            <li><a href="#about" id="ham1"><i class="fa fa-user"></i> About</a></li>
+            <li><a href="#projects" id="ham2"><i class="fa fa-tasks"></i> Projects</a></li>
+            <li><a href="#contacts" id="ham3"><i class="fa fa-envelope"> </i> Contact</a></li>
+        </ul>
 
         <!-- Navbar on small screens -->
-        <div id="navDemo" class="bugerButton w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <!-- <div id="navDemo" class="bugerButton w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contacts">Contact</a>
-        </div>
+        </div> -->
 
         <section>
-            <div class="hero">
+            <div class="hero" id="hero-top">
                 <img class="test" src="./image/home2.jpg" alt="">
                 <h1 class="headline">Creep before you walk</h1>
             </div>
@@ -164,7 +171,9 @@
     <!-- Footer -->
     <div id="footer">
         <footer class="w3-center w3-dark-grey w3-padding-64">
-            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+            <!--Consider to kick this button off-->
+            <a href="#hero-top" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 
             <div class="w3-xlarge w3-section">
                 <a href="https://github.com/kbtony"><i class="fa fa-github"></i></a>
@@ -198,6 +207,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="./js/app.js"></script>
+
+
+
+
+    <!--Test Sticky Nav-->
+    <script>
+        window.onscroll = function() {myFunction2()};
+        
+        var navbar = document.getElementById("myTopnav");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction2() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
+
 </body>
 
 </html>
