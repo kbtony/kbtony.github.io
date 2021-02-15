@@ -1,4 +1,5 @@
 
+// I. Homepage Animation
 const hero = document.querySelector(".hero");
 const slider = document.querySelector(".slider");
 const topnav = document.querySelector(".topnav");
@@ -13,7 +14,7 @@ tl.fromTo(hero, 1, {height: "0%"}, {height:"100%", ease: Power2.easeInOut })
 //.fromTo(headline, 0.5, {opacity: 0, x: 30}, {opacity: 1, x: 0}, "-=0.5")
 
 
-// Animated Responsive Hamburger Navbar
+// II. Animated Responsive Hamburger Navbar
 const hamburger = document.querySelector(".icon");
 const navLinks = document.querySelector(".hamburger-links");
 const links = document.querySelector(".hamburger-links li");
@@ -40,17 +41,16 @@ ham2.addEventListener("click", () => {
 ham3.addEventListener("click", () => {
     navLinks.classList.toggle("open");
 });
-// Animated Responsive Hamburger Navbar
 
 
-/* Sticky Navbar */
-window.onscroll = function() {myFunction2()};
+// III. Sticky Navbar
+window.onscroll = function() {myFunction()};
 
 //const navbar = document.querySelector(".topnav");
 var navbar = document.getElementById("my-topnav");
 var sticky = navbar.offsetTop;
 
-function myFunction2() {
+function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
