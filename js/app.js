@@ -43,10 +43,11 @@ ham3.addEventListener("click", () => {
 // Animated Responsive Hamburger Navbar
 
 
-// Sticky Navbar
+/* Sticky Navbar */
 window.onscroll = function() {myFunction2()};
-        
-var navbar = document.getElementById("myTopnav");
+
+//const navbar = document.querySelector(".topnav");
+var navbar = document.getElementById("my-topnav");
 var sticky = navbar.offsetTop;
 
 function myFunction2() {

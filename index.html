@@ -14,45 +14,36 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--Faster Google Fonts with Preconnect-->
+    <!-- Faster Google Fonts with Preconnect -->
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <!-- Font -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
-    <!--Link to style.css-->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!-- Navbar on large screens -->
-    <div class="topnav" id="myTopnav">
+    <div class="topnav" id="my-topnav">
         <a style="float: left" href="" id="brand"></i> Tony (Lih-Ren)</a>
-        <a style="float: right" href="#contacts"><i class="fa fa-envelope"></i> Contact</a>
-        <a style="float: right" href="#projects"><i class="fa fa-tasks"></i> Projects</a>
-        <a style="float: right" href="#about"><i class="fa fa-user"></i> About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+        <a href="#contacts"><i class="fa fa-envelope"></i> Contact</a>
+        <a href="#projects"><i class="fa fa-tasks"></i> Projects</a>
+        <a href="#about"><i class="fa fa-user"></i> About</a>
+        <!-- Hamburger Button (display:none when the screen is large) 
+             onclick function is implemented inside app.js -->
+        <a href="" class="icon" onclick="return false;"><i class="fa fa-bars"></i></a>
     </div>
 
     <header>
-        <!--Test Animated Responsive Hamburger Navbar-->
+        <!-- Animated Responsive Hamburger Navbar -->
         <ul class="hamburger-links">
             <li><a href="#about" id="ham1"><i class="fa fa-user"></i> About</a></li>
             <li><a href="#projects" id="ham2"><i class="fa fa-tasks"></i> Projects</a></li>
             <li><a href="#contacts" id="ham3"><i class="fa fa-envelope"> </i> Contact</a></li>
         </ul>
-
-        <!-- Navbar on small screens -->
-        <!-- <div id="navDemo" class="bugerButton w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contact</a>
-        </div> -->
 
         <section>
             <div class="hero" id="hero-top">
@@ -88,7 +79,7 @@
                     camps held at a school with few academic resources.
                 </p>
                 <a id="resume-button" href="./CV/Resume_lihrenc.pdf" target="_blank">
-                    <button class="w3-button w3-center w3-light-grey w3-padding-large w3-section">
+                    <button class="w3-button w3-center w3-light-grey w3-padding-large w3-section" id="cv-button-border">
                         <i class="fa fa-download"></i> Download Resume
                     </button>
                 </a>
@@ -153,7 +144,7 @@
         <footer class="w3-center w3-dark-grey w3-padding-64">
 
             <!--Consider to kick this button off-->
-            <a href="#hero-top" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            <a href="#hero-top" class="w3-button w3-light-grey" id="to-top"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 
             <div class="w3-xlarge w3-section">
                 <a href="https://github.com/kbtony"><i class="fa fa-github"></i></a>
